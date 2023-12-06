@@ -43,3 +43,5 @@ The average complexity of insertion sort is $\Theta(n^2)$, and the reasons are a
 1. In the first for loop when i = 1, val = arr[1] is the second element, j = 1. Then goes to the second for loop j = 1; arr[0] compare with arr[1], if arr[0] > arr[1], not need to swap, j = 0. So, we still get into two for loops to compare elements.
 2. When i = 2, val = arr[2] the third element, j = 2. In the second for loop, j = 2, if arr[1] > arr[2], we swap arr[2] to the arr[1]. Again, we need to go through two loops even without too many swap elements in average cases.
 3. So, ignore constant swap and arr[j] = val, One for loop is n, and two for loops is $(n^2)$.
+
+For the reverse insertion sort, I think the average time complexity is also O(n^2) because it also needs to go through two for loops to compare and probability swap position. The only difference is that it goes from the end to the beginning of the list.
